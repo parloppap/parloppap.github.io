@@ -1,7 +1,28 @@
+<script setup>
+const isNighttime = ref(false);
+
+const hours = new Date().getHours();
+const isDayTime = hours > 6 && hours < 20;
+if (isDayTime === true) {
+  isNighttime.value = false;
+} else {
+  isNighttime.value = true;
+}
+</script>
+
 <template>
   <div
-    class="min-h-screen bg-gradient-to-b from-[#8F87F1] to-[#FED2E2] flex justify-center items-center overflow-hidden relative"
+    class="h-screen bg-gradient-to-b from-[#8F87F1] to-[#FED2E2] flex justify-center items-center overflow-hidden relative"
+    :class="{ '!from-[#070F2B] !to-[#9290c3]': isNighttime }"
   >
+    <!-- <img
+      v-for="item in 10"
+      src="../public/src/images/star.png"
+      class="cloud absolute cloud-1"
+      alt=""
+      v-if="isNighttime"
+    /> -->
+
     <img
       v-for="item in 10"
       src="../public/src/images/cloud.png"
@@ -9,7 +30,9 @@
       alt=""
     />
 
-    <div class="p-4 border-l-4 border-r-4 rounded-lg text-center text-white">
+    <div
+      class="p-4 border-l-4 border-r-4 border-white rounded-lg text-center text-white"
+    >
       <h1 class="title uppercase relative">
         P<span class="lowercase text-[#E9A5F1]">i</span>mpat<span
           class="lowercase text-[#E9A5F1]"
@@ -27,8 +50,6 @@
     </div>
   </div>
 </template>
-
-<script setup></script>
 
 <style lang="scss" scoped>
 .title {
@@ -102,7 +123,7 @@
   &:nth-child(10) {
     animation-duration: 20s;
     margin-left: 80%;
-    top: 90%;
+    top: 85%;
   }
 }
 

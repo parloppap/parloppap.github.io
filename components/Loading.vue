@@ -33,7 +33,7 @@ onMounted(() => {
 
 <template>
   <div
-    class="bg-[#6dd3e7] absolute inset-0 flex justify-center items-center px-3 duration-300 h-screen z-[1]"
+    class="bg-[#6dd3e7] fixed inset-0 flex justify-center items-center px-3 duration-300 h-screen z-10"
     :class="{ '!h-0': !isHideLoading }"
   >
     <div
