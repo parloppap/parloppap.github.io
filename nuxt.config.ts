@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-const BASE_URL = 'https://actai-redesign.pages.dev/';
+const BASE_URL = 'https://parloppap.github.io/';
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
@@ -68,9 +68,7 @@ export default defineNuxtConfig({
         },
       ],
       htmlAttrs: { lang: 'en' },
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/public/favicon.png' },
-      ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
     },
   },
   css: [
@@ -81,6 +79,9 @@ export default defineNuxtConfig({
       Sniglet: true,
       DynaPuff: true,
       'Delius Swash Caps': true,
+      Quicksand: true,
+      Poppins: true,
+      Pacifico: true,
     },
   },
   vite: {

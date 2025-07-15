@@ -9,7 +9,7 @@ html {
 body {
   box-sizing: border-box;
   color: #000000;
-  font-family: 'Sniglet', system-ui;
+  font-family: 'Quicksand', system-ui;
   line-height: normal;
 }
 
@@ -84,132 +84,15 @@ a {
   display: none;
 }
 
-// disclosure
-
-.disclosure-btn {
-  @apply flex  gap-2 text-left;
-}
-
-.disclosure-btn svg {
-  @apply duration-300 mt-1;
-}
-
-.disclosure-btn[aria-expanded='false'] svg {
-  @apply -rotate-90;
-}
-
-.disclosure-panel {
-  @apply pl-8;
-}
-
-// dropdown
-
-.dropdown-btn {
-  @apply w-full px-2.5 py-[5px] b4 text-left bg-white  flex justify-between items-center ring-[#0B5C90];
-}
-
-.dropdown-btn svg {
-  @apply duration-300 size-4;
-}
-
-.dropdown-btn[aria-expanded='true'] svg {
-  @apply -rotate-180;
-}
-
-.dropdown-btn[aria-expanded='true'] ~ .combobox-btn svg {
-  @apply -rotate-180;
-}
-
-.dropdown-list {
-  @apply mt-1 w-full b4 text-left max-h-44 bg-white overflow-x-scroll z-10 shadow-md  pb-0;
-
-  li {
-    @apply px-2.5 py-[5px] cursor-pointer text-black hover:bg-black hover:text-white;
-  }
-}
-
-// cookie consent
-
-.wv_cookie-consent__lang {
-  display: none !important;
-}
-
-.wv_cookie-consent__body {
-  // margin: 0 !important;
-  font-size: 20px !important;
-  line-height: normal !important;
-
-  a {
-    color: #8dccf0 !important;
-    transition: 0.3s;
-  }
-
-  a:hover {
-    color: #2ea0df !important;
-  }
-}
-
-.wv_cookie-consent__options {
-  margin: 0 !important;
-}
-
-.wv_cookie-consent__container,
-.wv_cookie-consent__actions button {
-  font-family: 'DB_Helvethaica_X' !important;
-  font-size: 20px !important;
-}
-
-.wv_cookie-consent__container {
-  padding: 25px 50px !important;
+.circle {
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
 
   @include mobile {
-    padding: 20px !important;
-  }
-}
-
-.wv_cookie-consent__actions button {
-  border-radius: 10px !important;
-}
-
-.wv_cookie-consent--banner,
-.wv_cookie-consent__container {
-  background: #333333 !important;
-}
-
-.wv_cookie-consent__actions > button:first-child {
-  border-color: #8dccf0 !important;
-  color: #8dccf0 !important;
-  transition: 0.3s;
-}
-
-.wv_cookie-consent__actions > button:first-child:hover {
-  background: transparent !important;
-  border-color: #2ea0df !important;
-  color: #2ea0df !important;
-}
-
-.radio-wrapper {
-  background: #f5f5f5;
-
-  div {
-    width: 100%;
-    border-left: 1px solid #d9d9d9;
-    border-right: 1px solid #d9d9d9;
-    padding: 5px 10px;
-    text-align: left;
-  }
-
-  .radio-btn:first-child {
-    border: 1px solid #d9d9d9;
-    border-radius: 10px 10px 0 0;
-  }
-
-  .radio-btn:last-child {
-    border: 1px solid #d9d9d9;
-    border-radius: 0 0 10px 10px;
-  }
-
-  .radio-btn[aria-checked='true'] {
-    @apply bg-[#D9D9D9] font-bold;
+    width: 350px;
+    height: 350px;
   }
 }

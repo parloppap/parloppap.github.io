@@ -1,8 +1,8 @@
 <script setup></script>
 
 <template>
-  <div class="min-h-screen">
-    <div class="max-w-screen-xl mx-auto px-3 py-20">
+  <div class="relative z-[1]">
+    <div class="mx-auto px-10 py-20">
       <div class="flex justify-center gap-10 flex-col sm:flex-row">
         <div class="bg-white rounded-lg border border-black basis-1/3 h-fit">
           <div class="p-3">
@@ -31,10 +31,14 @@
             </h5>
             <p class="b2">Front-End Developer</p>
             <p class="b2 mt-5">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              A results-driven Front-End Developer with 7 years of experience in
+              designing, developing, and optimizing user interfaces for web
+              applications. Extensive experience in understanding client
+              requirements, gathering system specifications, and collaborating
+              with cross-functional teams to deliver effective solutions. Strong
+              analytical skills combined with a deep understanding of front-end
+              technologies (HTML5, CSS3, JavaScript, Vue.js) and user-centered
+              design principles.
             </p>
           </div>
 

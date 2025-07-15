@@ -1,153 +1,101 @@
 <script setup>
-const isNighttime = ref(false);
+import scrollama from 'scrollama';
+const scroller = scrollama();
+const step = ref(0);
 
-const hours = new Date().getHours();
-const isDayTime = hours > 6 && hours < 20;
-if (isDayTime === true) {
-  isNighttime.value = false;
-} else {
-  isNighttime.value = true;
-}
+onMounted(() => {
+  // setup the instance, pass callback functions
+  nextTick(() => {
+    scroller
+      .setup({
+        step: '.step',
+        offset: 0.9,
+      })
+      .onStepEnter((response) => {
+        step.value = response.index;
+      })
+      .onStepExit((response) => {
+        // { element, index, direction }
+      });
+  });
+});
 </script>
 
 <template>
-  <div
-    class="h-screen bg-gradient-to-b from-[#8F87F1] to-[#FED2E2] flex justify-center items-center overflow-hidden relative"
-    :class="{ '!from-[#070F2B] !to-[#9290c3]': isNighttime }"
-  >
-    <!-- <img
-      v-for="item in 10"
-      src="../public/src/images/star.png"
-      class="cloud absolute cloud-1"
-      alt=""
-      v-if="isNighttime"
-    /> -->
-
-    <img
-      v-for="item in 10"
-      src="../public/src/images/cloud.png"
-      class="cloud absolute cloud-1"
-      alt=""
-    />
-
+  <div class="relative">
     <div
-      class="p-4 border-l-4 border-r-4 border-white rounded-lg text-center text-white"
+      class="min-h-screen overflow-hidden flex justify-center items-center sticky top-0"
     >
-      <h1 class="title uppercase relative">
-        P<span class="lowercase text-[#E9A5F1]">i</span>mpat<span
-          class="lowercase text-[#E9A5F1]"
-          >i</span
-        >pan<span
-          class="absolute text-lg sm:text-2xl -top-1 sm:top-0 left-[58.5%] sm:left-[59.7%] star"
-          >⭐</span
-        >
-      </h1>
-      <h3 class="title uppercase">Portfolio</h3>
-    </div>
+      <div class="flex">
+        <h1 class="title" :class="{ 'opacity-0': step >= 1 }">h</h1>
+        <h1 class="title" :class="{ 'opacity-0': step >= 1 }">e</h1>
+        <h1 class="title" :class="{ 'opacity-0': step >= 1 }">l</h1>
+        <h1 class="title" :class="{ 'opacity-0': step >= 1 }">l</h1>
+        <h1 class="title" :class="{ 'opacity-0': step >= 1 }">o</h1>
+        <h1 class="title" :class="{ 'opacity-0': step >= 1 }">!</h1>
+      </div>
 
-    <div class="absolute bottom-5 text-white">
-      <h4>↓</h4>
+      <p
+        class="absolute bottom-5 inset-x-0 text-center"
+        :class="{ 'opacity-0': step >= 1 }"
+      >
+        scroll down to explore
+      </p>
+
+      <Namelogo v-if="step >= 1" :step="step" />
+    </div>
+    <div class="">
+      <div class="h-[50vh] step" v-for="item in 3"></div>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .title {
-  font-family: 'DynaPuff', system-ui;
+  font-family: 'Pacifico', system-ui;
+  font-size: 15vw;
+  animation: wave 2s ease-in-out infinite;
+
+  @include tablet {
+    font-size: 25vw;
+  }
 }
 
-.cloud {
-  top: 0;
-  left: 0;
+.title:nth-child(1) {
+  animation-delay: 0s;
+  color: #5e72eb;
   transition: 0.5s;
-  animation: clouds 10s infinite linear;
-
-  &:nth-child(1) {
-    animation-duration: 25s;
-    margin-left: 10%;
-    transform: scale(1.5);
-  }
-
-  &:nth-child(2) {
-    animation-duration: 30s;
-    margin-left: 30%;
-    top: 20%;
-  }
-
-  &:nth-child(3) {
-    animation-duration: 10s;
-    margin-left: 50%;
-    top: 60%;
-    transform: scale(2);
-  }
-
-  &:nth-child(4) {
-    animation-duration: 15s;
-    margin-left: 70%;
-    top: 40%;
-  }
-
-  &:nth-child(5) {
-    animation-duration: 40s;
-    margin-left: 90%;
-    top: 80%;
-    transform: scale(0.5);
-  }
-
-  &:nth-child(6) {
-    animation-duration: 45s;
-    margin-left: 10%;
-    top: 10%;
-  }
-
-  &:nth-child(7) {
-    animation-duration: 50s;
-    margin-left: 20%;
-    top: 30%;
-    transform: scale(0.5);
-  }
-
-  &:nth-child(8) {
-    animation-duration: 55s;
-    margin-left: 40%;
-    top: 50%;
-  }
-
-  &:nth-child(9) {
-    animation-duration: 60s;
-    margin-left: 60%;
-    top: 70%;
-    transform: scale(1.5);
-  }
-
-  &:nth-child(10) {
-    animation-duration: 20s;
-    margin-left: 80%;
-    top: 85%;
-  }
+}
+.title:nth-child(2) {
+  animation-delay: 0.2s;
+  color: #ff9190;
+}
+.title:nth-child(3) {
+  animation-delay: 0.4s;
+  color: #fec195;
+  transition: 0.5s;
+}
+.title:nth-child(4) {
+  animation-delay: 0.6s;
+  color: #ffe2e2;
+}
+.title:nth-child(5) {
+  animation-delay: 0.8s;
+  color: #f6f6f6;
+}
+.title:nth-child(6) {
+  animation-delay: 1s;
+  color: #8785a2;
+  transition: 0.5s;
 }
 
-.star {
-  animation: rolling 1s infinite linear;
-}
-
-@keyframes clouds {
-  0% {
-    left: -100%;
-  }
-
+@keyframes wave {
+  0%,
   100% {
-    left: 120%;
+    transform: translateY(0);
   }
-}
-
-@keyframes rolling {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
+  50% {
+    transform: translateY(-20px);
   }
 }
 </style>
