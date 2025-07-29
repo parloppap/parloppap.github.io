@@ -1,10 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 const BASE_URL = 'https://parloppap.github.io/';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', 'nuxt-aos'],
+  modules: ['@nuxtjs/google-fonts', 'nuxt-aos'],
   runtimeConfig: {
     public: {
       baseUrl: BASE_URL,
@@ -72,15 +73,11 @@ export default defineNuxtConfig({
     },
   },
   css: [
-    '~/public/src/styles/main.scss', // you should add main.scss somewhere in your app
+    '~/assets/styles/main.css', // you should add main.scss somewhere in your app
   ],
   googleFonts: {
     families: {
-      Sniglet: true,
-      DynaPuff: true,
-      'Delius Swash Caps': true,
       Quicksand: true,
-      Poppins: true,
       Pacifico: true,
     },
   },
@@ -89,11 +86,12 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData: `
-          @use "~/public/src/styles/_mixins.scss" as *;
+             @use "~/assets/styles/_mixins.scss" as *;
           `,
         },
       },
     },
+    plugins: [tailwindcss()],
   },
   components: [
     {

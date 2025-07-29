@@ -2,12 +2,14 @@
 
 <template>
   <div class="relative z-[1]">
-    <div class="mx-auto px-10 py-20">
-      <div class="flex justify-center gap-10 flex-col sm:flex-row">
-        <div class="bg-white rounded-lg border border-black basis-1/3 h-fit">
+    <div class="mx-auto px-3 sm:px-10 py-20">
+      <div class="flex justify-center gap-10 flex-col lg:flex-row">
+        <div
+          class="bg-white rounded-lg border border-black basis-1/3 h-fit max-w-[320px] mx-auto"
+        >
           <div class="p-3">
             <img
-              src="../public/src/images/corgi.png"
+              src="../public/src/images/logo.svg"
               alt=""
               class="w-6 inline"
             />
@@ -16,7 +18,7 @@
           <img src="../public/src/images/me.jpg" class="" alt="" />
           <!-- <div class="p-3">💖</div> -->
           <div class="p-3">
-            <p class="inline ml-2"><b>pimpa.ang</b> : Nice to meet you!</p>
+            <p class="inline ml-2"><b>pimpa.ang</b> : Greetings!</p>
           </div>
         </div>
         <div class="flex flex-col gap-y-2 basis-2/3">
@@ -63,7 +65,38 @@
             data-aos-duration="1000"
           >
             <h5 class="font-bold">Skills</h5>
-            <img src="../public/src/images/nuxt.svg" class="w-10" alt="" />
+            <div class="flex gap-2 flex-wrap my-3">
+              <img
+                src="../public/src/images/tailwind.svg"
+                class="w-35"
+                alt="tailwind.css"
+              />
+              <img
+                src="../public/src/images/bootstrap.png"
+                class="w-10"
+                alt="bootstrap"
+              />
+              <img
+                src="../public/src/images/javascript.png"
+                class="w-10"
+                alt="javascript"
+              />
+              <img
+                src="../public/src/images/vue.png"
+                class="w-10"
+                alt="vue.js"
+              />
+              <img
+                src="../public/src/images/nuxt.svg"
+                class="w-10"
+                alt="nuxt.js"
+              />
+              <img
+                src="../public/src/images/firebase.svg"
+                class="w-25"
+                alt="firebase"
+              />
+            </div>
           </div>
         </div>
       </div>

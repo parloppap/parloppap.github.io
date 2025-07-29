@@ -14,37 +14,47 @@ if (isDayTime === true) {
 <template>
   <div class="bg-[#EDDDD4]">
     <Intro />
-    <div class="bg-red-500 relative max-w-screen-lg rounded-xl mx-auto mt-60">
-      <div class="circle bg-red-500 -translate-y-40 top-0 inset-x-0 mx-auto">
-        <img
-          src="../public/src/images/smile.png"
-          alt=""
-          class="w-10 mx-auto translate-y-10"
-        />
+    <div class="px-3 pb-10">
+      <div
+        class="bg-gradient-to-b from-red-500 from-50% via-orange-500 via-75% to-yellow-500 relative max-w-screen-lg rounded-xl mx-auto mt-60"
+      >
+        <div class="circle bg-red-500 -translate-y-40 top-0 inset-x-0 mx-auto">
+          <img
+            src="../public/src/images/smile.png"
+            alt=""
+            class="w-10 mx-auto translate-y-10"
+          />
 
-        <h3 class="font-bold text-center text-white mt-14 uppercase">
-          profile
-        </h3>
+          <h3 class="font-bold text-center text-white mt-14 uppercase">
+            profile
+          </h3>
+        </div>
+
+        <AboutMe />
       </div>
 
-      <AboutMe />
-    </div>
+      <div
+        class="bg-gradient-to-b from-green-500 from-50% via-sky-500 via-75% to-blue-500 relative max-w-screen-lg rounded-xl mx-auto mt-60"
+      >
+        <div
+          class="circle bg-green-500 -translate-y-40 top-0 inset-x-0 mx-auto"
+        >
+          <img
+            src="../public/src/images/smile.png"
+            alt=""
+            class="w-10 mx-auto translate-y-10"
+          />
 
-    <div
-      class="h-screen bg-orange-500 relative max-w-screen-lg rounded-xl mx-auto mt-60"
-    >
-      <div class="circle bg-orange-500 -translate-y-40 top-0 inset-x-0 mx-auto">
-        <img
-          src="../public/src/images/smile.png"
-          alt=""
-          class="w-10 mx-auto translate-y-10"
-        />
+          <h3 class="font-bold text-center text-white mt-14 uppercase">
+            work experience
+          </h3>
+        </div>
 
-        <h3 class="font-bold text-center text-white mt-14 uppercase">
-          profile
-        </h3>
+        <WorkExperience />
       </div>
     </div>
+    <Showcase />
+    <GetInTouch />
   </div>
 </template>
 
@@ -67,5 +77,16 @@ if (isDayTime === true) {
     #1b1a55 50%,
     #070f2b 75%
   ) !important;
+}
+
+.circle {
+  width: 500px;
+  height: 300px;
+  border-radius: 100% 100% 0 0;
+
+  @include mobile {
+    width: 300px;
+    height: 300px;
+  }
 }
 </style>
