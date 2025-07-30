@@ -14,7 +14,7 @@ if (isDayTime === true) {
 <template>
   <div class="bg-[#EDDDD4]">
     <Intro />
-    <div class="px-3 pb-10">
+    <div class="px-3 pb-10 overflow-x-hidden">
       <div
         class="bg-gradient-to-b from-red-500 from-50% via-orange-500 via-75% to-yellow-500 relative max-w-screen-lg rounded-xl mx-auto mt-60"
       >

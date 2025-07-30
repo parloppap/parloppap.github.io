@@ -77,6 +77,13 @@ import 'animate.css';
 .circle:hover {
   width: 700px;
   height: 700px;
+
+  @include tablet {
+    @media (pointer: coarse) {
+      width: 350px;
+      height: 350px;
+    }
+  }
 }
 
 .circle:nth-child(1) {

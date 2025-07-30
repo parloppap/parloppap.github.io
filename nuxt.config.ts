@@ -72,6 +72,9 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
     },
   },
+  // devServer: {
+  //   host: '0.0.0.0',
+  // },
   css: [
     '~/assets/styles/main.css', // you should add main.scss somewhere in your app
   ],
