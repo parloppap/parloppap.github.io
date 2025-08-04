@@ -104,12 +104,4 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-.bg-paper {
-  background-image: linear-gradient(#e4e4e4 1px, transparent 1px);
-  background-size: 8% 8%, 2px 2px;
-  background-color: #f9f9f9;
-  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.15));
-  border-radius: 10px;
-}
-</style>
+<style lang="scss" scoped></style>

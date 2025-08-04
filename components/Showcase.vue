@@ -94,6 +94,36 @@ const projects = [
     link: 'https://saveseafishers.org/forcedlabouratSEA/',
     img: 'seabound.jpg',
   },
+  {
+    name: 'ชุมชนบ้านผึ้ง (Banphueng Smart City)',
+    link: 'https://banphuengcity.com/',
+    img: 'og_banpueng.png',
+  },
+  {
+    name: 'สานฝันกับอบต. อ่ายนาไลย (Ainalai Community)',
+    link: 'https://xn--q3crbl1b4ac8l5a.com/',
+    img: 'og_ainalai.png',
+  },
+  {
+    name: 'ชุมชนบ่อเกลือ (Boklua Community)',
+    link: 'https://xn--12c3c8a4ac3d2c2c.com/',
+    img: 'og_bokuer.png',
+  },
+  {
+    name: 'ชุมชนเขาหลวง (Khaoluang Community)',
+    link: 'https://xn--22ckha9e1b5aq8aze1c9e.com/',
+    img: 'og_kaoluang.png',
+  },
+  {
+    name: 'ชุมชนพานทอง (Phanthong Community)',
+    link: 'https://xn--72c5aft1f1a.com/',
+    img: 'og_pantong.png',
+  },
+  {
+    name: 'How Anime Popular In The World - Visualization Playground',
+    link: 'https://visplayground.punchup.world/2024/',
+    img: 'visplayground.png',
+  },
 ];
 </script>
 
@@ -108,7 +138,7 @@ const projects = [
 
     <img
       src="../public/src/images/smile-line.svg"
-      class="mx-auto w-3/4 sm:w-1/4 mb-15"
+      class="mx-auto w-3/4 sm:w-1/5 mb-15"
       alt=""
     />
 
@@ -126,12 +156,4 @@ const projects = [
   </div>
 </template>
 
-<style lang="scss" scoped>
-.showcase-text {
-  font-size: 100px;
-
-  @include mobile {
-    font-size: 40px;
-  }
-}
-</style>
+<style lang="scss" scoped></style>

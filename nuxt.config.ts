@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/google-fonts', 'nuxt-aos'],
+  modules: ['@nuxtjs/google-fonts', 'nuxt-aos', 'nuxt-swiper'],
   runtimeConfig: {
     public: {
       baseUrl: BASE_URL,

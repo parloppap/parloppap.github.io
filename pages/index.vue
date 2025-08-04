@@ -54,6 +54,8 @@ if (isDayTime === true) {
       </div>
     </div>
     <Showcase />
+    <Awards />
+    <Activities />
     <GetInTouch />
   </div>
 </template>
