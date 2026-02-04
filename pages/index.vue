@@ -16,14 +16,12 @@ if (isDayTime === true) {
     <Intro />
     <div class="px-3 pb-10 overflow-x-hidden">
       <div
-        class="bg-gradient-to-b from-red-500 from-50% via-orange-500 via-75% to-yellow-500 relative max-w-screen-lg rounded-xl mx-auto mt-60"
-      >
+        class="bg-linear-to-b from-red-500 from-50% via-orange-500 via-75% to-yellow-500 relative max-w-5xl rounded-xl mx-auto mt-60">
         <div class="circle bg-red-500 -translate-y-40 top-0 inset-x-0 mx-auto">
           <img
             src="../public/src/images/smile.png"
             alt=""
-            class="w-10 mx-auto translate-y-10"
-          />
+            class="w-10 mx-auto translate-y-10" />
 
           <h3 class="font-bold text-center text-white mt-14 uppercase">
             profile
@@ -34,16 +32,13 @@ if (isDayTime === true) {
       </div>
 
       <div
-        class="bg-gradient-to-b from-green-500 from-50% via-sky-500 via-75% to-blue-500 relative max-w-screen-lg rounded-xl mx-auto mt-60"
-      >
+        class="bg-linear-to-b from-green-500 from-50% via-sky-500 via-75% to-blue-500 relative max-w-5xl rounded-xl mx-auto mt-60">
         <div
-          class="circle bg-green-500 -translate-y-40 top-0 inset-x-0 mx-auto"
-        >
+          class="circle bg-green-500 -translate-y-40 top-0 inset-x-0 mx-auto">
           <img
             src="../public/src/images/smile.png"
             alt=""
-            class="w-10 mx-auto translate-y-10"
-          />
+            class="w-10 mx-auto translate-y-10" />
 
           <h3 class="font-bold text-center text-white mt-14 uppercase">
             work experience
