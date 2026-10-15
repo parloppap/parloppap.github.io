@@ -10,13 +10,13 @@
     </div>
 
     <img
-      src="../public/src/images/smile-line.svg"
+      src="/src/images/smile-line.svg"
       class="mx-auto w-3/4 sm:w-1/5 mb-15"
       alt=""
     />
 
     <div
-      class="flex flex-col md:flex-row justify-center max-w-screen-lg mx-auto gap-5 px-3"
+      class="flex flex-col md:flex-row justify-center max-w-5xl mx-auto gap-5 px-3"
     >
       <div
         class="flex-1 flex justify-center gap-10 flex-col lg:flex-row"
@@ -25,19 +25,19 @@
         <div class="bg-white rounded-lg border border-black h-fit mx-auto">
           <div class="p-3">
             <img
-              src="../public/src/images/logo.svg"
+              src="/src/images/logo.svg"
               alt=""
               class="w-6 inline"
             />
             <p class="inline ml-2">pimpa.ang</p>
           </div>
 
-          <img src="../public/src/images/awards-23.jpg" class="s" alt="" />
+          <img src="/src/images/awards-23.jpg" class="s" alt="" />
 
           <div class="p-3 b4 gap-2 flex flex-col">
             <div class="flex gap-1 items-center">
               <img
-                src="../public/src/images/heart.svg"
+                src="/src/images/heart.svg"
                 class="w-6 animate__animated animate__headShake animate__infinite"
                 alt="heart"
               />
@@ -56,7 +56,7 @@
               class="p-3 rounded-full bg-secondary text-primary w-fit font-black uppercase flex items-center gap-2 b5"
               >Explore more
               <img
-                src="../public/src/images/chevron.svg"
+                src="/src/images/chevron.svg"
                 class="w-2 text-primary"
                 alt=""
             /></a>
@@ -71,19 +71,19 @@
         <div class="bg-white rounded-lg border border-black h-fit mx-auto">
           <div class="p-3">
             <img
-              src="../public/src/images/logo.svg"
+              src="/src/images/logo.svg"
               alt=""
               class="w-6 inline"
             />
             <p class="inline ml-2">pimpa.ang</p>
           </div>
 
-          <img src="../public/src/images/awards-24.jpg" class="s" alt="" />
+          <img src="/src/images/awards-24.jpg" class="s" alt="" />
 
           <div class="p-3 b4 gap-2 flex flex-col">
             <div class="flex gap-1 items-center">
               <img
-                src="../public/src/images/heart.svg"
+                src="/src/images/heart.svg"
                 class="w-6 animate__animated animate__headShake animate__infinite"
                 alt="heart"
               />
@@ -102,7 +102,7 @@
               class="p-3 rounded-full bg-secondary text-primary w-fit font-black uppercase flex items-center gap-2 b5"
               >Explore more
               <img
-                src="../public/src/images/chevron.svg"
+                src="/src/images/chevron.svg"
                 class="w-2 text-primary"
                 alt=""
             /></a>
@@ -112,7 +112,5 @@
     </div>
   </div>
 </template>
-
-<script setup></script>
 
 <style lang="scss" scoped></style>

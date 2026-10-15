@@ -1,6 +1,6 @@
 <script setup>
 const setimg = (img) => {
-  return './src/images/' + img;
+  return '/src/images/' + img;
 };
 
 const projects = [
@@ -137,18 +137,19 @@ const projects = [
     </div>
 
     <img
-      src="../public/src/images/smile-line.svg"
+      src="/src/images/smile-line.svg"
       class="mx-auto w-3/4 sm:w-1/5 mb-15"
       alt=""
     />
 
     <div class="flex flex-wrap">
-      <div class="w-full sm:w-2/4 lg:w-1/4" v-for="item in projects">
+      <div class="w-full sm:w-2/4 lg:w-1/4" v-for="item in projects" :key="item.link">
         <a :href="item.link" target="_blank" rel="noopener noreferrer">
           <img
-            :src="setimg(`${item.img}`)"
+            :src="setimg(item.img)"
             :alt="item.name"
-            class="aspect-video"
+            loading="lazy"
+            class="aspect-video w-full object-cover"
           />
         </a>
       </div>

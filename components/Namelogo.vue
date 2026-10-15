@@ -1,52 +1,52 @@
 <template>
   <div
-    class="absolute min-h-screen w-full overflow-x-clip animate__animated animate__fadeIn animate__delay-1s"
+    class="absolute min-h-screen w-full overflow-x-clip namelogo-fade-in"
   >
     <div class="circle bg-red-500">
       <img
-        src="../public/src/images/smile.png"
+        src="/src/images/smile.png"
         alt=""
         class="w-10 mx-auto translate-y-10"
       />
     </div>
     <div class="circle bg-orange-500">
       <img
-        src="../public/src/images/smile.png"
+        src="/src/images/smile.png"
         alt=""
         class="w-10 mx-auto translate-y-10"
       />
     </div>
     <div class="circle bg-yellow-500">
       <img
-        src="../public/src/images/smile.png"
+        src="/src/images/smile.png"
         alt=""
         class="w-10 mx-auto translate-y-10"
       />
     </div>
     <div class="circle bg-green-500">
       <img
-        src="../public/src/images/smile.png"
+        src="/src/images/smile.png"
         alt=""
         class="w-10 mx-auto translate-y-10"
       />
     </div>
     <div class="circle bg-sky-500">
       <img
-        src="../public/src/images/smile.png"
+        src="/src/images/smile.png"
         alt=""
         class="w-10 mx-auto translate-y-10"
       />
     </div>
     <div class="circle bg-blue-500">
       <img
-        src="../public/src/images/smile.png"
+        src="/src/images/smile.png"
         alt=""
         class="w-10 mx-auto translate-y-10"
       />
     </div>
     <div class="circle bg-violet-500">
       <img
-        src="../public/src/images/smile.png"
+        src="/src/images/smile.png"
         alt=""
         class="w-10 mx-auto translate-y-10"
       />
@@ -56,24 +56,36 @@
       class="absolute inset-0 m-auto logo-box pointer-events-none animate__animated animate__pulse animate__delay-1s"
     >
       <img
-        src="../public/src/images/fullname-logo.svg"
+        src="/src/images/fullname-logo.svg"
         alt=""
         class="absolute inset-0 m-auto w-3/4 sm:w-1/4 translate-y-[7%]"
       />
       <img
-        src="../public/src/images/fullname-text.svg"
+        src="/src/images/fullname-text.svg"
         alt=""
-        class="absolute inset-0 m-auto w-3/4 sm:w-1/4 animate__animated animate-spin animate__slower"
+        class="absolute inset-0 m-auto w-3/4 sm:w-1/4 animate-[spin_15s_linear_infinite]"
       />
     </div>
   </div>
 </template>
 
-<script setup>
-import 'animate.css';
-</script>
-
 <style lang="scss" scoped>
+// Own animation instead of animate.css's fadeIn: animate.css cuts animations
+// to 1ms under prefers-reduced-motion, so the logo would pop in instantly.
+// Timing matches .hello-fade-out in Intro.vue so the two cross-fade.
+.namelogo-fade-in {
+  animation: fade-in 1.5s ease-out 1s both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .circle:hover {
   width: 700px;
   height: 700px;

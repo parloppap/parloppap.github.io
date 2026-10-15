@@ -1,16 +1,3 @@
-<script setup>
-const isLoading = ref(true);
-const isNighttime = ref(false);
-
-const hours = new Date().getHours();
-const isDayTime = hours > 6 && hours < 20;
-if (isDayTime === true) {
-  isNighttime.value = false;
-} else {
-  isNighttime.value = true;
-}
-</script>
-
 <template>
   <div class="bg-[#EDDDD4]">
     <Intro />
@@ -19,7 +6,7 @@ if (isDayTime === true) {
         class="bg-linear-to-b from-red-500 from-50% via-orange-500 via-75% to-yellow-500 relative max-w-5xl rounded-xl mx-auto mt-60">
         <div class="circle bg-red-500 -translate-y-40 top-0 inset-x-0 mx-auto">
           <img
-            src="../public/src/images/smile.png"
+            src="/src/images/smile.png"
             alt=""
             class="w-10 mx-auto translate-y-10" />
 
@@ -36,7 +23,7 @@ if (isDayTime === true) {
         <div
           class="circle bg-green-500 -translate-y-40 top-0 inset-x-0 mx-auto">
           <img
-            src="../public/src/images/smile.png"
+            src="/src/images/smile.png"
             alt=""
             class="w-10 mx-auto translate-y-10" />
 
@@ -56,26 +43,6 @@ if (isDayTime === true) {
 </template>
 
 <style lang="scss" scoped>
-.content {
-  background: linear-gradient(
-    180deg,
-    #fed2e2 0%,
-    #e9a5f1 25%,
-    #c68efd 50%,
-    #8f87f1 75%
-  );
-}
-
-.content-night {
-  background: linear-gradient(
-    180deg,
-    #9290c3 0%,
-    #535c91 25%,
-    #1b1a55 50%,
-    #070f2b 75%
-  ) !important;
-}
-
 .circle {
   width: 500px;
   height: 300px;

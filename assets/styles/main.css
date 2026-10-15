@@ -148,10 +148,6 @@ a {
   }
 }
 
-.animate__slower {
-  --animate-duration: 4s;
-}
-
 .showcase-text {
   font-size: 100px;
 
