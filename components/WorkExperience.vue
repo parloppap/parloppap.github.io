@@ -15,8 +15,38 @@ import 'animate.css';
       <h5 class="text-center">years of total experiences</h5>
 
       <div class="py-5 flex flex-col gap-5">
-        <div
+              <div
           data-aos="fade-left"
+          class="gap-2 bg-paper p-5 text-secondary lg:w-3/4">
+          <div class="flex justify-between">
+            <div>
+              <p class="b1 font-bold">Aware Co., Ltd. (Outsourced to CP Axtra)</p>
+              <p class="b4">Senior Developer | 2026 - Present</p>
+            </div>
+
+           
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <ul class="list-disc ml-5">
+              <li>
+               System Ownership (Trading Agreement System): Spearheaded the end-to-end frontend development of an internal Trading Agreement System for CP Axtra, managing the application lifecycle from initial deployment on Vercel to scaling key business modules.
+              </li>
+              <li>
+            Micro-frontends Migration & DB Design: Partnered with the Tech Lead to transition core features to a Micro-frontends architecture and contributed to database schema design to support complex contract/agreement data workflows.
+              </li>
+              <li>
+Code Quality & Mentorship: Conducted code reviews and enforced coding standards to ensure application security, maintainability, and high-performance delivery across the team.
+              </li>
+              <li>
+          Agile & Cross-Functional Collaboration: Collaborated closely with Product Owners (PO), QA teams, and Tech Leads in an Agile environment to translate business specs into technical solutions and streamline test-to-production deployment.
+              </li>
+            </ul>
+          </div>
+        </div>
+        
+        <div
+          data-aos="fade-right"
           class="flex flex-col gap-2 bg-paper p-5 text-secondary lg:w-3/4 ml-auto">
           <div class="flex justify-between">
             <div>
@@ -50,7 +80,7 @@ import 'animate.css';
         </div>
 
         <div
-          data-aos="fade-right"
+          data-aos="fade-left"
           class="gap-2 bg-paper p-5 text-secondary lg:w-3/4">
           <div class="flex justify-between">
             <div>
@@ -92,7 +122,7 @@ import 'animate.css';
         </div>
 
         <div
-          data-aos="fade-left"
+          data-aos="fade-right"
           class="gap-2 bg-paper p-5 text-secondary lg:w-3/4 ml-auto">
           <div class="flex justify-between">
             <div>
