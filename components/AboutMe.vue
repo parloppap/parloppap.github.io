@@ -30,14 +30,7 @@
             </h5>
             <p class="b2">Front-End Developer</p>
             <p class="b3 my-4">
-              A results-driven Front-End Developer with 7 years of experience in
-              designing, developing, and optimizing user interfaces for web
-              applications. Extensive experience in understanding client
-              requirements, gathering system specifications, and collaborating
-              with cross-functional teams to deliver effective solutions. Strong
-              analytical skills combined with a deep understanding of front-end
-              technologies (HTML5, CSS3, JavaScript, Vue.js) and user-centered
-              design principles.
+              Front-End Developer with 8 years of experience specializing in building modern web applications using React, Vue.js, and TypeScript. Proven track record in translating complex specs into clean, responsive UI and improving app performance. Seeking to contribute core technical skills and team collaboration to drive impactful web solutions.
             </p>
           </div>
 
