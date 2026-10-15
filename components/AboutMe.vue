@@ -54,19 +54,35 @@
             data-aos-duration="1000">
             <h5 class="font-bold underline">Skills</h5>
             <div class="flex flex-col gap-3 flex-wrap my-3">
-              <p class="font-bold">Core Tech:</p>
+              <p class="font-bold">Frontend Frameworks & Languages:</p>
               <p>
-                HTML5, CSS3 (SCSS), JavaScript (ES6+) TypeScript,Vue.js (2/3),
-                Nuxt.js, Next.js, jQuery
+             JavaScript (ES6+), TypeScript, React, Next.js, Vue.js (2/3), Nuxt.js, HTML5, CSS3 (SCSS), jQuery
               </p>
 
-              <p class="font-bold">Styling & Tools:</p>
-              <p>Pinia, TailwindCSS, Firebase, Git, Google Analytics</p>
+               <p class="font-bold">State Management & Data Fetching:</p>
+              <p>
+            Pinia, Vuex, React Query, GraphQL, RESTful APIs, Axios
+              </p>
+
+               <p class="font-bold">Performance, SEO & Standards:</p>
+              <p>
+            Google Lighthouse, Core Web Vitals, Web Performance Optimization, SEO Optimization, Responsive Web Design, Cross-Browser Compatibility
+              </p>
+
+               <p class="font-bold">Testing, Tools & Build Systems:</p>
+              <p>
+         Playwright, Vite, Webpack, Git, Firebase, Google Analytics
+              </p>
+
+              <p class="font-bold">UI Libraries & Styling:</p>
+              <p>TailwindCSS, MUI (Material-UI), Ant Design, Bootstrap</p>
+
+                <p class="font-bold">Architecture & Methodologies:</p>
+              <p>Micro-frontends, Design Systems, Modular Component Design</p>
 
               <p class="font-bold">Soft Skills:</p>
               <p>
-                Stakeholder Communication, Problem-Solving, Cross-functional
-                Collaboration
+           Stakeholder Communication, Problem-Solving, Cross-functional Collaboration
               </p>
             </div>
           </div>
